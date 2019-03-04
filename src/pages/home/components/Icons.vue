@@ -91,6 +91,7 @@ export default {
     padding-bottom: 50%
   .icons
     touch-action: none
+    margin-top: .1rem
     .icon
       position: relative
       overflow: hidden

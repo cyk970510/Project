@@ -6,7 +6,7 @@ import router from './router'
 import fastClick from 'fastclick'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import './assets/styles/reset.css'
-import './assets/styles/border.css'//  一像素边框
+import './assets/styles/border.css'
 import './assets/styles/iconfont.css'
 import 'swiper/dist/css/swiper.css'
 Vue.config.productionTip = false
