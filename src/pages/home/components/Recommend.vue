@@ -5,21 +5,21 @@
       猜你喜欢
     </div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
-        <img class="item-img" :src="item.imgUrl" />
-        <div class="item-info">
-          <p class="item-title">{{item.title}}</p>
-          <div class="item-comment">
-            <span class="iconfont item-comment-icon">&#xe600;</span>
-            <span class="item-comment-number">{{item.comment}}条评论</span>
+        <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+          <img class="item-img" :src="item.imgUrl" />
+          <div class="item-info">
+            <p class="item-title">{{item.title}}</p>
+            <div class="item-comment">
+              <span class="iconfont item-comment-icon">&#xe600;</span>
+              <span class="item-comment-number">{{item.comment}}条评论</span>
+            </div>
+            <div class="item-price">
+              <span class="item-price-icon">¥<em class="item-price-money">{{item.price}}</em></span>
+              起
+              <span class="item-price-place">{{item.place}}</span>
+            </div>
           </div>
-          <div class="item-price">
-            <span class="item-price-icon">¥<em class="item-price-money">{{item.price}}</em></span>
-            起
-            <span class="item-price-place">{{item.place}}</span>
-          </div>
-        </div>
-      </li>
+        </li>
     </ul>
   </div>
 </template>
