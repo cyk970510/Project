@@ -2,7 +2,7 @@
   <div class="container" @click="handleGallaryClick">
     <div class="wrapper">
       <swiper :options="SwiperOptions">
-        <swiper-slide v-for="(item,index) in imgs" :key="index">
+        <swiper-slide v-for="(item,index) in gallaryImgs" :key="index">
           <img class="gallary-img" :src="item"/>
         </swiper-slide>
         <!--定义播图下面的白点-->
@@ -16,7 +16,7 @@
 export default {
   name: 'CommonGallary',
   props: {
-    imgs: {
+    gallaryImgs: {
       type: Array,
       default () {
         return []
