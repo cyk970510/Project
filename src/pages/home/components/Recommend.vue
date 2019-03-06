@@ -5,7 +5,13 @@
       猜你喜欢
     </div>
     <ul>
-        <router-link tag="li" class="item border-bottom" v-for="item of recommendList" :key="item.id" :to="'/detail/' + item.id">
+        <router-link tag="li"
+                     class="item border-bottom"
+                     v-for="item of recommendList"
+                     :key="item.id"
+                     :to="'/detail/' + item.id"
+                     @click="scrollTop()"
+        >
           <img class="item-img" :src="item.imgUrl" />
           <div class="item-info">
             <p class="item-title">{{item.title}}</p>
